@@ -1,4 +1,10 @@
 // import CountUp from "react-countup"
+import portfolio from "./assets/portfolio.jpeg"
+import portfolio1 from "./assets/portfolio1.jpeg"
+import portfolio2 from "./assets/portfolio2.jpeg"
+
+import sos from "./assets/sos.jpeg"
+import sos1 from "./assets/sos1.jpeg"
 import Particles from "react-tsparticles"
 import { FaBars } from "react-icons/fa"
 import { TypeAnimation } from "react-type-animation"
@@ -281,11 +287,11 @@ function App() {
                 transition={{ duration: 0.5 }}
                 className="border rounded-3xl p-6 hover:shadow-2xl duration-300"
               >
-                <img
-                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop"
-                  alt="project"
-                  className="rounded-2xl mb-5 h-52 w-full object-cover"
-                />
+               <img
+  src={sos}
+  alt="Women Safety App"
+  className="rounded-2xl mb-5 h-52 w-full object-cover"
+/>
 
                 <h3 className="text-2xl font-bold mb-3">
                   Women Safety App
@@ -336,35 +342,39 @@ function App() {
               >
 
                 <img
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
-                  alt="project"
-                  className="rounded-2xl mb-5 h-52 w-full object-cover"
-                />
+  src={portfolio}
+  alt="Portfolio Website"
+  className="rounded-2xl mb-5 h-52 w-full object-cover"
+/>
 
                 <h3 className="text-2xl font-bold mb-3">
-                  SHE Platform
+                  Personal Portfolio Website
                 </h3>
 
                 <p className="text-gray-600 leading-7 mb-5">
-                  Women health awareness platform with
-                  Firebase integration.
+                 Modern responsive portfolio website built using React, Tailwind CSS, Framer Motion, and deployed on Vercel.
                 </p>
 
                 <div className="flex flex-wrap gap-3 mb-5">
 
                   <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
                     } px-4 py-2 rounded-xl text-sm`}>
-                    HTML
+                    React
                   </span>
 
                   <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
                     } px-4 py-2 rounded-xl text-sm`}>
-                    JavaScript
+                    Tailwind Css
                   </span>
 
                   <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
                     } px-4 py-2 rounded-xl text-sm`}>
-                    Firebase
+                    Framer Motion
+                  </span>
+                  
+                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
+                    } px-4 py-2 rounded-xl text-sm`}>
+                    Vercel
                   </span>
 
                 </div>
