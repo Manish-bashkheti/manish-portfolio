@@ -507,27 +507,29 @@ function App() {
         {/* Social Icons */}
         <div className="flex gap-4 mb-8">
 
-          <a
-            href="https://github.com/"
-            target="_blank"
-            className={`${darkMode
-              ? "bg-[#222] text-white"
-              : "bg-gray-100 text-black"
-              } p-4 rounded-2xl hover:bg-black hover:text-white duration-300`}
-          >
-            <FaGithub size={20} />
-          </a>
+      <a
+  href="https://github.com/Manish-bashkheti"
+  target="_blank"
+  rel="noreferrer"
+  className={`${darkMode
+      ? "bg-[#222] hover:bg-[#333]"
+      : "bg-gray-100 hover:bg-gray-200"
+    } p-4 rounded-2xl duration-300`}
+>
+  <FaGithub />
+</a>
 
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            className={`${darkMode
-              ? "bg-[#222] text-white"
-              : "bg-gray-100 text-black"
-              } p-4 rounded-2xl hover:bg-blue-600 hover:text-white duration-300`}
-          >
-            <FaLinkedin size={20} />
-          </a>
+         <a
+  href="https://www.linkedin.com/in/manish-bashkheti-66806240a/"
+  target="_blank"
+  rel="noreferrer"
+  className={`${darkMode
+      ? "bg-[#222] hover:bg-[#333]"
+      : "bg-gray-100 hover:bg-gray-200"
+    } p-4 rounded-2xl duration-300`}
+>
+  <FaLinkedin />
+</a>
 
           <a
             href="https://instagram.com"
