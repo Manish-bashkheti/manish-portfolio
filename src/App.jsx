@@ -1,7 +1,7 @@
 // import CountUp from "react-countup"
 import portfolio from "./assets/portfolio.jpeg"
 import portfolio1 from "./assets/portfolio1.jpeg"
-import portfolio2 from "./assets/portfolio2.jpeg"
+import portfolio3 from "./assets/portfolio3.png"
 
 import sos from "./assets/sos.jpeg"
 import sos1 from "./assets/sos1.jpeg"
@@ -288,9 +288,9 @@ function App() {
                 className="border rounded-3xl p-6 hover:shadow-2xl duration-300"
               >
                <img
-  src={sos}
+  src={sos1}
   alt="Women Safety App"
-  className="rounded-2xl mb-5 h-52 w-full object-cover"
+  className="rounded-2xl mb-5 h-72 object-contain bg-gray-100 p-2 mx-auto w-full"
 />
 
                 <h3 className="text-2xl font-bold mb-3">
@@ -341,10 +341,10 @@ function App() {
                 className="border rounded-3xl p-6 hover:shadow-2xl duration-300"
               >
 
-                <img
-  src={portfolio}
+  <img
+  src={portfolio3}
   alt="Portfolio Website"
-  className="rounded-2xl mb-5 h-52 w-full object-cover"
+  className="rounded-2xl mb-5 h-52 w-full object-cover border"
 />
 
                 <h3 className="text-2xl font-bold mb-3">
