@@ -440,7 +440,7 @@ const sendEmail = (e) => {
 
     <input
       type="text"
-      name="name"
+      name="from_name"
       placeholder="Your Name"
       required
       className={`${darkMode
@@ -451,7 +451,7 @@ const sendEmail = (e) => {
 
     <input
       type="email"
-      name="email"
+      name="from_email"
       placeholder="Your Email"
       required
       className={`${darkMode
@@ -461,7 +461,7 @@ const sendEmail = (e) => {
     />
 
     <textarea
-      name="message"
+    name="message"
       placeholder="Your Message"
       rows="5"
       required
