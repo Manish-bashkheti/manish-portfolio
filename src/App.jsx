@@ -1,4 +1,6 @@
 // import CountUp from "react-countup"
+import emailjs from "@emailjs/browser"
+import { useRef } from "react"
 import portfolio from "./assets/portfolio.jpeg"
 import portfolio1 from "./assets/portfolio1.jpeg"
 import portfolio3 from "./assets/portfolio3.png"
@@ -27,6 +29,29 @@ function App() {
     x: 0,
     y: 0
   })
+  const form = useRef()
+
+const sendEmail = (e) => {
+  e.preventDefault()
+
+  emailjs
+    .sendForm(
+      "service_uziskbi",
+      "template_429vbbp",
+      form.current,
+      "4zLigHB58qn3ycgG4"
+    )
+    .then(
+      () => {
+        alert("Message Sent Successfully 🚀")
+      },
+      () => {
+        alert("Failed to send message ❌")
+      }
+    )
+
+  e.target.reset()
+}
   useEffect(() => {
 
     setTimeout(() => {
@@ -392,6 +417,69 @@ function App() {
 
 
         </motion.div>
+        {/* Contact Section */}
+<motion.div
+  id="contact"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7 }}
+  viewport={{ once: true }}
+  className={`${darkMode ? "bg-[#111]" : "bg-white"
+    } rounded-3xl p-8 shadow-xl border border-white/20 mt-8`}
+>
+
+  <h2 className="text-3xl font-bold mb-8">
+    Contact Me
+  </h2>
+
+  <form
+    ref={form}
+    onSubmit={sendEmail}
+    className="space-y-5"
+  >
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+      className={`${darkMode
+          ? "bg-[#222] text-white"
+          : "bg-gray-100 text-black"
+        } w-full p-4 rounded-2xl outline-none`}
+    />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+      className={`${darkMode
+          ? "bg-[#222] text-white"
+          : "bg-gray-100 text-black"
+        } w-full p-4 rounded-2xl outline-none`}
+    />
+
+    <textarea
+      name="message"
+      placeholder="Your Message"
+      rows="5"
+      required
+      className={`${darkMode
+          ? "bg-[#222] text-white"
+          : "bg-gray-100 text-black"
+        } w-full p-4 rounded-2xl outline-none`}
+    ></textarea>
+
+    <button
+      type="submit"
+      className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-2xl duration-300 hover:scale-105"
+    >
+      Send Message
+    </button>
+
+  </form>
+</motion.div>
 
         {/* Skills Section */}
         <div
