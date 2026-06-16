@@ -240,9 +240,11 @@ const sendEmail = (e) => {
               sequence={[
                 "FULL STACK DEVELOPER",
                 2000,
-                "REACT NATIVE DEVELOPER",
+                "MERN Stack Developer",
                 2000,
                 "FRONTEND DEVELOPER",
+                2000,
+                "Building Modern Web Applications",
                 2000,
               ]}
               wrapper="p"
@@ -253,13 +255,13 @@ const sendEmail = (e) => {
 
             <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               Building Modern <br />
-              Web & Mobile Apps
+              Web 
             </h2>
 
             <p className="text-gray-600 leading-8 text-lg mb-8 max-w-2xl">
               Passionate developer focused on creating responsive,
               scalable and user-friendly applications using React,
-              React Native, Firebase and JavaScript.
+               Firebase and JavaScript.
             </p>
 
             {/* Buttons */}
@@ -313,25 +315,34 @@ const sendEmail = (e) => {
                 className="border rounded-3xl p-6 hover:shadow-2xl duration-300"
               >
                <img
-  src={sos1}
-  alt="Women Safety App"
+  //src={sos1}
+  alt="SHE – Self Health Empowerment"
   className="rounded-2xl mb-5 h-72 object-contain bg-gray-100 p-2 mx-auto w-full"
 />
 
                 <h3 className="text-2xl font-bold mb-3">
-                  Women Safety App
+                  SHE – Self Health Empowerment
                 </h3>
 
                 <p className="text-gray-600 leading-7 mb-5">
-                  Mobile application with SOS alerts,
-                  live location sharing and emergency calling.
+                  Women health awareness and support platform built using HTML, CSS, JavaScript, and Firebase. Designed responsive UI and integrated Firebase for data handling.
                 </p>
 
                 <div className="flex flex-wrap gap-3 mb-5">
 
                   <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
                     } px-4 py-2 rounded-xl text-sm`}>
-                    React Native
+                    HTML
+                  </span>
+
+                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
+                    } px-4 py-2 rounded-xl text-sm`}>
+                    CSS
+                  </span>
+
+                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
+                    } px-4 py-2 rounded-xl text-sm`}>
+                    JavaScript
                   </span>
 
                   <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
@@ -339,10 +350,7 @@ const sendEmail = (e) => {
                     Firebase
                   </span>
 
-                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
-                    } px-4 py-2 rounded-xl text-sm`}>
-                    TypeScript
-                  </span>
+                  
 
                 </div>
 <a
@@ -414,6 +422,64 @@ const sendEmail = (e) => {
           </motion.div>
 
             </div>
+            {/* Project 3 */}
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{
+                  y: -10,
+                  scale: 1.02,
+                }}
+                transition={{ duration: 0.5 }}
+                className="border rounded-3xl p-6 hover:shadow-2xl duration-300"
+              >
+               <img
+  //src={sos1}
+  alt="AI-Powered Smart Interview Platform"
+  className="rounded-2xl mb-5 h-72 object-contain bg-gray-100 p-2 mx-auto w-full"
+/>
+
+                <h3 className="text-2xl font-bold mb-3">
+                  AI-Powered Smart Interview Platform
+                </h3>
+
+                <p className="text-gray-600 leading-7 mb-5">
+                  AI-powered mock interview platform built using MERN Stack. Features authentication, dashboards, interview workflows, and MongoDB integration.
+                </p>
+
+                <div className="flex flex-wrap gap-3 mb-5">
+
+                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
+                    } px-4 py-2 rounded-xl text-sm`}>
+                    React
+                  </span>
+
+                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
+                    } px-4 py-2 rounded-xl text-sm`}>
+                    Node.js
+                  </span>
+
+                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
+                    } px-4 py-2 rounded-xl text-sm`}>
+                    Express.js
+                  </span>
+
+                  <span className={`${darkMode ? "bg-[#222] text-white" : "bg-gray-100 text-black"
+                    } px-4 py-2 rounded-xl text-sm`}>
+                    MongoDB
+                  </span>
+
+                  
+
+                </div>
+<a
+  href="https://github.com/"
+  target="_blank"
+  className="inline-block bg-black hover:bg-gray-800 text-white px-5 py-3 rounded-2xl hover:scale-105 duration-300"
+>
+  View Project
+</a>
+              </motion.div>
 
 
         </motion.div>
@@ -548,16 +614,42 @@ const sendEmail = (e) => {
 
             </div>
 
-            {/* Mobile */}
+            {/* Database */}
             <div className="border rounded-3xl p-6 hover:shadow-lg duration-300">
 
               <h3 className="text-2xl font-bold mb-5">
-                Mobile Development
+                Database
               </h3>
 
               <div className="flex flex-wrap gap-3">
 
-                {["React Native", "Expo CLI", "TypeScript"].map((skill) => (
+                {["MongoDB", "Firebase"].map((skill) => (
+
+                  <span
+                    key={skill}
+                    className={`${darkMode
+                      ? "bg-[#222] text-white"
+                      : "bg-gray-100 text-black"
+                      } px-4 py-2 rounded-xl`}
+                  >
+                    {skill}
+                  </span>
+
+                ))}
+
+              </div>
+
+            </div>
+            {/* Tools */}
+            <div className="border rounded-3xl p-6 hover:shadow-lg duration-300">
+
+              <h3 className="text-2xl font-bold mb-5">
+                Tools
+              </h3>
+
+              <div className="flex flex-wrap gap-3">
+
+                {["Git", "GitHub", "VS Code"].map((skill) => (
 
                   <span
                     key={skill}
@@ -580,6 +672,7 @@ const sendEmail = (e) => {
         </div>
 
       </div>
+      
 
       {/* Sidebar */}
       <div
@@ -598,7 +691,7 @@ const sendEmail = (e) => {
         </h2>
 
         <p className="text-gray-500 leading-7 mb-6">
-          Full Stack & React Native Developer passionate
+          Full Stack & MERN stack Developer passionate
           about building modern applications.
         </p>
 
@@ -651,7 +744,7 @@ const sendEmail = (e) => {
         <div className="grid grid-cols-2 gap-4 mb-8">
 
           <div className={`${darkMode ? "bg-[#1a1a1a]" : "bg-gray-100"} p-5 rounded-2xl text-center`}>
-            <h3 className="text-3xl font-bold">2+</h3>
+            <h3 className="text-3xl font-bold">3+</h3>
             <p className="text-sm text-gray-500 mt-2">Projects</p>
           </div>
 
